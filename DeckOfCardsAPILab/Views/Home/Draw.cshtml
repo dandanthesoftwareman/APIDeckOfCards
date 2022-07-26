@@ -1,0 +1,18 @@
+﻿@model DeckModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+<div class="text-center">
+    <img src="@Model.cards[0].image" /><br />
+    <img src="@Model.cards[1].image" /><br />
+    <img src="@Model.cards[2].image" /><br />
+    <img src="@Model.cards[3].image" /><br />
+    <img src="@Model.cards[4].image" /><br />
+</div>
+<form method="post" asp-action="Draw">
+    Draw Cards:<input type="submit"/><br />
+</form>
